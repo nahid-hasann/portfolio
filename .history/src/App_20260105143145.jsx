@@ -1,0 +1,19 @@
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Navbar from './component/Navbar';
+// import Navbar from './components/Navbar';
+
+function App() {
+  return (
+    <div>
+      
+      <Navbar />
+
+      <div className="min-h-screen container mx-auto px-4 py-6">
+        <Outlet />
+      </div>
+    </div>
+  );
+}
+
+export default App;
